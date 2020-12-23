@@ -1,9 +1,9 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit eutils toolchain-funcs fdo-mime
+inherit eutils toolchain-funcs xdg-utils
 
 DESCRIPTION="Program for improving image files made with a digital camera"
 HOMEPAGE="https://www.kornelix.net/fotoxx/fotoxx.html"
@@ -54,8 +54,9 @@ src_install() {
 }
 
 pkg_postinst() {
-	fdo-mime_mime_database_update
-	fdo-mime_desktop_database_update
+	xdg_icon_cache_update
+	xdg_desktop_database_update
+	xdg_mimeinfo_database_update
 	if use arm64; then
 		# we also need a valid swrast dri link to work, but
 		# eselect mesa doesn't manage this properly for
@@ -68,6 +69,7 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
-	fdo-mime_desktop_database_update
-	fdo-mime_mime_database_update
+	xdg_icon_cache_update
+	xdg_desktop_database_update
+	xdg_mimeinfo_database_update
 }

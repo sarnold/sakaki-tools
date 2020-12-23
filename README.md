@@ -100,4 +100,4 @@ Now you can install packages from the overlay. For example:
 
 ## Maintainers
 
-* [sakaki](mailto:sakaki@deciban.com)
+* [nerdboy](mailto:nerdboy@gentoo.org)
