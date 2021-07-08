@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer type="person">
+	<maintainer type="person">
 		<email>sakaki@deciban.com</email>
 		<name>sakaki</name>
-</maintainer>
-<upstream>
+	</maintainer>
+	<upstream>
 		<maintainer status="active">
-				<email>sakaki@deciban.com</email>
-				<name>sakaki</name>
+			<email>sakaki@deciban.com</email>
+			<name>sakaki</name>
 		</maintainer>
 		<bugs-to>mailto:sakaki@deciban.com</bugs-to>
-</upstream>
-<longdescription>
+	</upstream>
+	<longdescription>
 		Simple script to save, or by default verify, a signed
-       		sha512 master hash of the specified  Portage repository tree 
+		sha512 master hash of the specified  Portage repository tree 
 		(by  default, /usr/portage).
 
 		The cascaded ("master") hash covers the contents of all files
@@ -28,8 +28,8 @@
 		custom overlay) over an unauthenticated channel
 		(such as rsync) - that the consitutent ebuilds, manifests
 		etc. have not been tampered with in transit.
-</longdescription>
-<use>
+	</longdescription>
+	<use>
 		<flag name='add-pubkey'>Add bundled automatic signing key into gpg.</flag>
-</use>
+	</use>
 </pkgmetadata>
