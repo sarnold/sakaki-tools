@@ -1,4 +1,4 @@
-# Copyright 2020 sakaki <sakaki@deciban.com>
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -28,7 +28,7 @@ QA_PRESTRIPPED="usr/bin/${PN}"
 QA_DESKTOP_FILE="usr/share/applications/${PN}.desktop"
 
 src_compile() {
-	emake GRP="" -j1
+	emake GRP=""
 }
 
 src_install() {
@@ -37,7 +37,7 @@ src_install() {
 	local manpage="${D}/usr/share/man/man8/${PN}.8.gz"
 	if [[ -f "${manpage}" ]]; then
 		# prevent QA warnings about precompressed manpage
-		cd ${D}/usr/share/man/man8
+		cd "${D}/usr/share/man/man8"
 		unpack ./${PN}.8.gz
 		rm -f ./${PN}.8.gz
 	fi
