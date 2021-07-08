@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>bztsrc@gitlab</email>
+		<email>bztsrc@gitlab.com</email>
 		<name>bzt</name>
 	</maintainer>
 	<maintainer type="person">
