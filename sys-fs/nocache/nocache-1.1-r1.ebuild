@@ -1,10 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # Minmally adapted with thanks from
 # https://data.gpo.zugaina.org/junkdrawer/sys-fs/nocache/
 
-EAPI=5
+EAPI=6
 
 inherit multilib
 
