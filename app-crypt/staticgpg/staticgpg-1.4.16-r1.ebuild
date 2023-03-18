@@ -17,7 +17,7 @@ SRC_URI="mirror://gnupg/gnupg/${P/staticgpg/gnupg}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
 RDEPEND=""

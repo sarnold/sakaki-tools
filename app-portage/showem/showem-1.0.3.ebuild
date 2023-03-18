@@ -12,7 +12,7 @@ SRC_URI="${BASE_SERVER_URI}/${PN}/releases/download/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~x86"
 
 RESTRICT="mirror"
 
@@ -21,10 +21,7 @@ RDEPEND="${DEPEND}
 	>=sys-libs/ncurses-5.9-r2
 	>=app-shells/bash-4.2"
 
-# ebuild function overrides
-src_prepare() {
-	epatch_user
-}
+
 src_install() {
 	dobin "${PN}"
 	doman "${PN}.1"

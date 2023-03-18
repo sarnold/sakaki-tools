@@ -46,7 +46,7 @@ src_prepare() {
 		sed -i -e 's@USE_EMTEE=false@USE_EMTEE=true@g' "${S}/${PN}" || \
 			die "Failed to patch script to reflect emtee USE flag."
 	fi
-	epatch_user
+	default
 }
 src_install() {
 	dosbin "${PN}"
