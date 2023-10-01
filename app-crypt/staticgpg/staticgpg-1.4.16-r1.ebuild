@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils flag-o-matic toolchain-funcs
+inherit flag-o-matic toolchain-funcs
 
 ECCVER="0.2.0"
 ECCVER_GNUPG="1.4.9"
