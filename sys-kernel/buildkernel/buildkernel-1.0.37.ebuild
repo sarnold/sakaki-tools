@@ -24,9 +24,10 @@ RDEPEND="${DEPEND}
 	>=app-crypt/sbsigntools-0.6-r1
 	plymouth? ( sys-boot/plymouth[pango] )
 	>=sys-kernel/genkernel-next-58[cryptsetup,gpg,plymouth?]
-	=app-crypt/staticgpg-1.4.16-r1
 	>=sys-boot/efibootmgr-0.5.4-r1
 	>=sys-apps/debianutils-4.9.1[installkernel(+)]"
+# causes EAPI errors
+#=app-crypt/staticgpg-1.4.16-r1
 
 # ebuild function overrides
 src_prepare() {
